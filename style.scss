@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style-type: none !important; 
+}
+
+a{
+    text-decoration: none;
+    color:inherit
+}
+.wrapper {
+    max-width:1440px;
+    margin: 0 auto;
+}
+.container-fluid {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+$Montserrat : 'Montserrat', sans-serif;
+$light-text-color: #ffff;
+$text-color :#252B42;
+$second-text-color: #737373;
+$primaryColor: #23A6F0;
+
+@mixin title-text($color) {
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: $color;
+}
+@mixin text-big($color) {
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: $color;
+}
+@mixin text-medium($color) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: $color;
+}
+@mixin text-small($color) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $color;
+}
+
+/*Header*/
+header {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: #FAFAFA;;
+    background-image: url('./assets/image/hero-cover.3.jpg');
+    background-size: 100% 800px;
+    background-repeat: no-repeat;
+    color: $light-text-color;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+.my-navbar{
+    position: relative;
+    padding: 33px 0;
+    z-index: 1;
+} 
+#navbarNav{
+    justify-content: space-between;
+}
+.logo {
+    font: {
+        family:$Montserrat;
+        size:24px;
+        weight:700;
+    };
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin-right: 80px;
+    transition: color 0.3s ease;
+    &:hover{
+        color: $primaryColor
+    }
+}
+.menu {
+    li {
+        margin: 0 10px;
+        a{
+            font: 14px $Montserrat;
+            font-weight: 600;
+            color: $light-text-color;
+            letter-spacing: 0.2px;
+            &:hover{
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+.login{
+    font: 14px $Montserrat;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    &:hover{
+        color: $primaryColor
+    }
+}
+.sub-btn{
+    margin-left: 45px;
+    font: 14px $Montserrat;
+    font-weight: 600;
+    width: 214px;
+    height: 52px;
+    background: $primaryColor;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.header-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 26%;
+    color: $light-text-color;
+    h1{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 80px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        width: 700px;
+        margin:0 auto ;
+    }
+    p { 
+        font-family: $Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        margin-top: 40px;
+    }
+    .oval-btn {
+        background-color: $primaryColor;
+        color: white;
+        text-align: center;
+        padding: 15px 36px;
+        margin-top: 40px;
+        outline: none;
+        border-radius: 37px;
+        font-family: $Montserrat;
+        font-size: 14px;
+        font-weight: bold;
+        &:hover{
+            background-color: #0b5ed7;
+            border-color: #0b5ed7;
+        }
+        &:last-child{
+            border: 1px solid white;
+            background-color: transparent;
+            margin-left: 10px;
+            &:hover{
+                border-color:  $primaryColor;
+                background-color:  $primaryColor;
+            }
+        }
+    }
+}
+.header-card {
+    position: absolute;
+    display: flex;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    .header-card-item{
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 340px;
+        height: 201.53px;
+        color: black;
+        background-color: #ffff;
+        margin: 0 15px;
+        padding: 35px 40px;
+        border-radius: 0;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        img{
+            width: 20%;
+        }
+        .card-body{
+            padding: 0;
+            margin-top: 10px;
+            h5{
+                @include text-big($text-color);
+            }
+            p{
+                @include text-small($second-text-color);
+            }
+        }
+    }
+}
+.hover-card:hover{
+    background-color: $primaryColor;
+    border-color:$primaryColor ;
+    transition: background-color 0.3s ease ;
+    img{
+        filter: brightness(0) invert(1);
+        transition:filter 0.3s ease ;
+    }
+    .card-body {
+        h5,p{
+            color: $light-text-color;
+            transition: color 0.3s ease ;
+        }
+    }
+
+}
+
+/* Value block*/ 
+.value{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    h2,p{
+        text-align: center;
+    }
+    h2{
+        @include title-text($text-color)
+    }
+    p{
+        @include text-small($second-text-color);
+        width: 470px;    
+        margin: 10px auto 80px auto;
+    }
+}
+.value-card-item {
+    display: flex;
+    flex-flow: row wrap;
+    width: calc(33.333% - 20px);
+    margin:10px;
+    padding: 40px 15px;
+    cursor: pointer;
+    border-radius: 2px;
+    img {
+        display: block;
+        width: 15%;
+        height: 60%;
+    }
+    .card-body{
+        width: inherit;
+        padding: 0;
+        .card-title {
+            @include text-medium($text-color);
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 210px;
+            text-align: left;
+        }
+        .card-text {
+            width: 210px;
+            margin: 0 auto;
+            text-align: left;
+            @include text-small($second-text-color)
+        }
+    }
+}
+.client {
+    background-color: #FAFAFA;
+    padding-top:80px ;
+}
+.client-stats {
+    display: flex;
+    justify-content: space-between;
+    .big-number-wrapper {
+        width: 100%;
+        text-align: center;
+        .number{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 58px;
+            line-height: 80px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: $primaryColor;
+            cursor: default;
+        }
+        .text {
+            @include text-medium($text-color)
+        }
+    }
+}
