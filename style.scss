@@ -3,9 +3,14 @@
     padding:0;
     box-sizing: border-box;
 }
+p{
+    margin: 0;
+}
 
 ul,ol{
     list-style-type: none !important; 
+    margin: 0;
+    padding: 0;
 }
 
 a{
@@ -15,6 +20,7 @@ a{
 .wrapper {
     max-width:1440px;
     margin: 0 auto;
+    background-color: #FAFAFA;
 }
 .container-fluid {
     max-width: 1140px;
@@ -26,6 +32,8 @@ $light-text-color: #ffff;
 $text-color :#252B42;
 $second-text-color: #737373;
 $primaryColor: #23A6F0;
+$disableColor: #8EC2F2;
+$secondaryColor: #F3CD03;
 
 @mixin title-text($color) {
     font-family: $Montserrat;
@@ -93,6 +101,7 @@ header {
     justify-content: space-between;
 }
 .logo {
+    cursor: pointer;
     font: {
         family:$Montserrat;
         size:24px;
@@ -109,7 +118,7 @@ header {
 .menu {
     li {
         margin: 0 10px;
-        a{
+        a{  cursor: pointer;
             font: 14px $Montserrat;
             font-weight: 600;
             color: $light-text-color;
@@ -294,6 +303,8 @@ header {
         }
     }
 }
+
+/*Client block*/ 
 .client {
     background-color: #FAFAFA;
     padding-top:80px ;
@@ -317,6 +328,250 @@ header {
         }
         .text {
             @include text-medium($text-color)
+        }
+    }
+}
+.client-testimo {
+    padding: 100px 0;
+    h2{
+        @include title-text($text-color);
+        text-align:center;
+    }
+    >p{
+        @include text-small($second-text-color);
+        width: 470px;
+        text-align: center;
+        margin: 10px auto 80px auto;
+    }
+    .client-card-wrapper{
+        justify-content: center;
+        align-items: center;
+        .client-card-item {
+            border-width: 0px;
+            width: 510px;
+            flex-direction: row;
+            padding: 0;
+            margin: 0 15px;
+        }
+        .card-body {
+            padding:40px 30px;
+            .name {
+                @include text-big($text-color);
+                margin-bottom:0
+            }
+            .job{
+                @include text-small($second-text-color);
+                font-weight: 600;
+                text-align:left;
+            }
+            .star{
+                margin: 16px 0;
+                svg{
+                    fill: $secondaryColor;
+                }
+            }
+            .text {
+                @include text-small($second-text-color);
+            }
+        }
+    }
+}
+
+/*Pricing block*/ 
+.price {
+    background-color: #FAFAFA;
+    padding: 100px 0;
+    h2{
+        @include title-text($text-color);
+        text-align:center;
+    }
+    >p{
+        @include text-small($second-text-color);
+        width: 470px;
+        text-align: center;
+        margin: 10px auto 80px auto;
+    }
+}
+.price-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .price-card-items{
+        text-align: center;
+        padding: 50px 40px;
+        border: 1px solid $primaryColor;
+        border-radius: 10px;
+        margin: 0.5px;
+        width: 340px;
+        &.center{
+            padding-top: 70px;
+            padding-bottom: 70px;
+            background-color: $text-color;
+            h3{
+                color: $light-text-color;
+            }
+            >p{
+                color: $light-text-color
+            }
+            .feature-wrap {
+                p{
+                    color: $light-text-color
+                }
+            }
+        }
+        h3{
+            @include text-big($text-color);
+            margin-bottom: 35px;
+        }
+        >p{
+            @include text-medium($second-text-color);
+            width: 160px;
+            margin: 0 auto;
+        }
+    }
+    .price-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 35px 0;
+        .number {
+            @include title-text($primaryColor);
+            margin-right: 10px;
+        }
+        .currency{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            span:first-child{
+                @include text-medium($primaryColor)
+            }
+            span:last-child{
+                @include text-small($disableColor)
+            }
+        }
+    }
+    .feature-wrap {
+        .feature-item{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 18px;
+            &:last-child{
+                margin-bottom: 35px;
+            }
+            img{
+                margin-right: 18px
+            }
+            p{
+                @include text-small($text-color);
+                font-weight: 600;
+                text-align: left;
+            }
+        }
+    }
+    .sub-btn{
+        margin: 0 auto;
+        width: 246px;
+    }
+}
+
+/*Contact*/ 
+.contact {
+    background-color: #FAFAFA;
+    position: relative;
+    height: 830px;
+    padding-bottom:100px ;
+    .map-container {
+        height: 460px;
+        
+        img{
+            width: 100%;
+        }
+    }
+    .container-fluid{
+        position: absolute;
+        height: 85%;
+        left: 50%;
+        bottom: 0%;
+        transform: translateX(-50%);
+    }
+    .contact-form {
+        display: block;
+        padding: 40px 60px;
+        text-align: center;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        border-radius: 10px;
+        h2{
+            @include title-text($text-color)
+        }
+        p{
+            @include text-medium($text-color)
+        }
+        .form-control {
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        #inputMessage{
+            height: 140px;
+            resize: none;
+        }
+        .sub-btn {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            width: 218px;
+        }
+    }
+}
+.contact-bottom {
+    bottom: 0%;
+    text-align: left;
+    padding-bottom:40px ;
+    .container-fluid {
+        display: flex;
+        justify-content: space-between;
+    }
+    h3 {
+        @include text-big($text-color)
+    } 
+    p{
+        @include text-small($second-text-color)
+    }
+    .sub-btn{
+        width: 160px;
+    }
+}
+footer{
+    background-image: linear-gradient(to right,#004788,#D71489);
+    padding: 50px 0;
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        .footer-item_title {
+            @include text-medium($light-text-color);
+            text-align: left;
+            margin-bottom: 15px;
+            cursor: default
+        }
+        .footer-item_link {
+            @include text-small($light-text-color);
+            font-weight:600;
+            line-height: 24px;
+            padding: 5px 0;
+            &:hover{
+                a{
+                    color: $primaryColor;
+                    transition: color 0.3s ease;
+                }
+                img {
+                    filter: invert(49%) sepia(100%) saturate(419%) hue-rotate(159deg) brightness(96%) contrast(97%);
+                    transition: filter 0.3s ease;
+                }
+            }
+            img {
+                margin-right: 10px;
+            }
         }
     }
 }

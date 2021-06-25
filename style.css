@@ -5,8 +5,14 @@
           box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+}
+
 ul, ol {
   list-style-type: none !important;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -17,6 +23,7 @@ a {
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
+  background-color: #FAFAFA;
 }
 
 .container-fluid {
@@ -58,6 +65,7 @@ header {
 }
 
 .logo {
+  cursor: pointer;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -77,6 +85,7 @@ header {
 }
 
 .menu li a {
+  cursor: pointer;
   font: 14px "Montserrat", sans-serif;
   font-weight: 600;
   color: #ffff;
@@ -343,6 +352,7 @@ header {
   color: #737373;
 }
 
+/*Client block*/
 .client {
   background-color: #FAFAFA;
   padding-top: 80px;
@@ -383,5 +393,459 @@ header {
   text-align: center;
   letter-spacing: 0.1px;
   color: #252B42;
+}
+
+.client-testimo {
+  padding: 100px 0;
+}
+
+.client-testimo h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  text-align: center;
+}
+
+.client-testimo > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  width: 470px;
+  text-align: center;
+  margin: 10px auto 80px auto;
+}
+
+.client-testimo .client-card-wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client-testimo .client-card-wrapper .client-card-item {
+  border-width: 0px;
+  width: 510px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+  margin: 0 15px;
+}
+
+.client-testimo .client-card-wrapper .card-body {
+  padding: 40px 30px;
+}
+
+.client-testimo .client-card-wrapper .card-body .name {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  margin-bottom: 0;
+}
+
+.client-testimo .client-card-wrapper .card-body .job {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  font-weight: 600;
+  text-align: left;
+}
+
+.client-testimo .client-card-wrapper .card-body .star {
+  margin: 16px 0;
+}
+
+.client-testimo .client-card-wrapper .card-body .star svg {
+  fill: #F3CD03;
+}
+
+.client-testimo .client-card-wrapper .card-body .text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+/*Pricing block*/
+.price {
+  background-color: #FAFAFA;
+  padding: 100px 0;
+}
+
+.price h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  text-align: center;
+}
+
+.price > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  width: 470px;
+  text-align: center;
+  margin: 10px auto 80px auto;
+}
+
+.price-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.price-card-wrapper .price-card-items {
+  text-align: center;
+  padding: 50px 40px;
+  border: 1px solid #23A6F0;
+  border-radius: 10px;
+  margin: 0.5px;
+  width: 340px;
+}
+
+.price-card-wrapper .price-card-items.center {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #252B42;
+}
+
+.price-card-wrapper .price-card-items.center h3 {
+  color: #ffff;
+}
+
+.price-card-wrapper .price-card-items.center > p {
+  color: #ffff;
+}
+
+.price-card-wrapper .price-card-items.center .feature-wrap p {
+  color: #ffff;
+}
+
+.price-card-wrapper .price-card-items h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  margin-bottom: 35px;
+}
+
+.price-card-wrapper .price-card-items > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #737373;
+  width: 160px;
+  margin: 0 auto;
+}
+
+.price-card-wrapper .price-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 35px 0;
+}
+
+.price-card-wrapper .price-wrap .number {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #23A6F0;
+  margin-right: 10px;
+}
+
+.price-card-wrapper .price-wrap .currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.price-card-wrapper .price-wrap .currency span:first-child {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #23A6F0;
+}
+
+.price-card-wrapper .price-wrap .currency span:last-child {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #8EC2F2;
+}
+
+.price-card-wrapper .feature-wrap .feature-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 18px;
+}
+
+.price-card-wrapper .feature-wrap .feature-item:last-child {
+  margin-bottom: 35px;
+}
+
+.price-card-wrapper .feature-wrap .feature-item img {
+  margin-right: 18px;
+}
+
+.price-card-wrapper .feature-wrap .feature-item p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  font-weight: 600;
+  text-align: left;
+}
+
+.price-card-wrapper .sub-btn {
+  margin: 0 auto;
+  width: 246px;
+}
+
+/*Contact*/
+.contact {
+  background-color: #FAFAFA;
+  position: relative;
+  height: 830px;
+  padding-bottom: 100px;
+}
+
+.contact .map-container {
+  height: 460px;
+}
+
+.contact .map-container img {
+  width: 100%;
+}
+
+.contact .container-fluid {
+  position: absolute;
+  height: 85%;
+  left: 50%;
+  bottom: 0%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.contact .contact-form {
+  display: block;
+  padding: 40px 60px;
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact .contact-form h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+.contact .contact-form p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #252B42;
+}
+
+.contact .contact-form .form-control {
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.contact .contact-form #inputMessage {
+  height: 140px;
+  resize: none;
+}
+
+.contact .contact-form .sub-btn {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 218px;
+}
+
+.contact-bottom {
+  bottom: 0%;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.contact-bottom .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-bottom h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+}
+
+.contact-bottom p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.contact-bottom .sub-btn {
+  width: 160px;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left top, right top, from(#004788), to(#D71489));
+  background-image: linear-gradient(to right, #004788, #D71489);
+  padding: 50px 0;
+}
+
+footer .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-wrapper .footer-item_title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #ffff;
+  text-align: left;
+  margin-bottom: 15px;
+  cursor: default;
+}
+
+footer .footer-wrapper .footer-item_link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #ffff;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 5px 0;
+}
+
+footer .footer-wrapper .footer-item_link:hover a {
+  color: #23A6F0;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+footer .footer-wrapper .footer-item_link:hover img {
+  -webkit-filter: invert(49%) sepia(100%) saturate(419%) hue-rotate(159deg) brightness(96%) contrast(97%);
+          filter: invert(49%) sepia(100%) saturate(419%) hue-rotate(159deg) brightness(96%) contrast(97%);
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+}
+
+footer .footer-wrapper .footer-item_link img {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
