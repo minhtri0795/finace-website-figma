@@ -15,6 +15,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
 </head>
 
 <body>
@@ -22,18 +23,32 @@
     <div class="wrapper">
       <header>
         <div class="overlay"></div>
-        <nav class="navbar my-navbar navbar-expand-lg">
+        <nav class="my-navbar navbar navbar-expand-lg">
           <div class="container-fluid">
             <a class="logo" href="#">Finance Web</a>
-            <button style="position: relative; z-index: 100; display: block;" class="navbar-toggler" type="button"
-              data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="toggle-icon-wrapper">
+              <button style="position: relative; z-index: 100; " class="navbar-toggler" >
+                <span class="">
+                  <img src="./assets/image/cart.png" alt="">
+                </span>
+              </button>
+              <button style="position: relative; z-index: 100; " class="navbar-toggler" >
+                <span class="">
+                  <img src="./assets/image/cart.png" alt="">
+                </span>
+              </button>
+              <button style="position: relative; z-index: 100; " class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="">
+                  <img src="./assets/image/toggle-icon.png" alt="">
+                </span>
+              </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav menu">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                  <a class="nav-link current" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Product</a>
@@ -59,22 +74,22 @@
           <button class="oval-btn btn btn-primary">Get Quote Now</button>
           <button class="oval-btn btn btn-outline-primary">Learn More</button>
         </div>
-        <div class="header-card">
-          <div class="header-card-item hover-card card">
+        <div class="header-card row">
+          <div class="header-card-item hover-card card col-sm-12">
             <img src="./assets/image/vector-blue.png" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Investment Trading</h5>
               <p class="card-text">the quick fox jumps over the lazy dog</p>
             </div>
           </div>
-          <div class="header-card-item hover-card card">
+          <div class="header-card-item hover-card card col-sm-12">
             <img src="./assets/image/vector-blue.png" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Investment Trading</h5>
               <p class="card-text">the quick fox jumps over the lazy dog</p>
             </div>
           </div>
-          <div class="header-card-item hover-card card">
+          <div class="header-card-item hover-card card col-sm-12">
             <img src="./assets/image/vector-blue.png" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Investment Trading</h5>
@@ -138,20 +153,20 @@
         </section>
         <section class="client">
           <div class="container-fluid">
-            <div class="client-stats">
-              <div class="big-number-wrapper">
+            <div class="client-stats row">
+              <div class="big-number-wrapper col-xl-3 col-sm-12">
                 <div class="number">972+</div>
                 <div class="text">Projects Done</div>
               </div>
-              <div class="big-number-wrapper">
+              <div class="big-number-wrapper col-xl-3 col-sm-12">
                 <div class="number">972+</div>
                 <div class="text">Projects Done</div>
               </div>
-              <div class="big-number-wrapper">
+              <div class="big-number-wrapper col-xl-3 col-sm-12">
                 <div class="number">972+</div>
                 <div class="text">Projects Done</div>
               </div>
-              <div class="big-number-wrapper">
+              <div class="big-number-wrapper col-xl-3 col-sm-12">
                 <div class="number">972+</div>
                 <div class="text">Projects Done</div>
               </div>
@@ -244,8 +259,8 @@
           <p>Problems trying to resolve the conflict between
             the two major realms of Classical physics: Newtonian mechanics </p>
           <div class="container-fluid">
-            <div class="price-card-wrapper">
-              <div class="price-card-items">
+            <div class="price-card-wrapper row">
+              <div class="price-card-items col-sm-12">
                 <h3>FREE</h3>
                 <p>Organize across all 
                   apps by hand</p>
@@ -277,7 +292,7 @@
                 </div>
                 <button class="btn btn-primary sub-btn">Try for free</button>
               </div>
-              <div class="price-card-items center">
+              <div class="price-card-items center col-sm-12">
                 <h3>FREE</h3>
                 <p>Organize across all 
                   apps by hand</p>
@@ -309,7 +324,7 @@
                 </div>
                 <button class="btn btn-primary sub-btn">Try for free</button>
               </div>
-              <div class="price-card-items">
+              <div class="price-card-items col-sm-12">
                 <h3>FREE</h3>
                 <p>Organize across all 
                   apps by hand</p>
@@ -344,7 +359,7 @@
             </div>
           </div>
         </section>
-        <section class="contact">
+        <section class="contact mobile-hide">
           <div class="map-container"><img src="./assets/image/cover.png" alt=""></div>
           <div class="container-fluid">
             <form class="contact-form">
@@ -375,18 +390,25 @@
             </form>
           </div>
         </section>
+        <div class="subscribe-mobile">
+          <h3>Subscribe For Latest Newsletter</h3>
+          <form action="">
+            <input type="text" placeholder="Your Email">
+            <button class="btn btn-primary sub-btn">Subscribe</button>
+          </form>
+        </div>
         <div class="contact-bottom">
-          <div class="container-fluid">
-            <div><h3>Consulting Agency For Your Business</h3>
+          <div class="container-fluid row">
+            <div class="col-xl-8 col-sm-12"><h3>Consulting Agency For Your Business</h3>
               <p>the quick fox jumps over the lazy dog</p></div>
-            <button class="btn btn-primary sub-btn">Contact Us</button>
+            <button class="btn btn-primary sub-btn col-xl-2 col-sm-12">Contact Us</button>
           </div>
         </div>
       </main>
       <footer>
         <div class="container-fluid">
-          <div class="footer-wrapper">
-            <div class="footer-item">
+          <div class="footer-wrapper row">
+            <div class="footer-item col-xl-2 col-sm-12">
               <p class="footer-item_title">Company Info</p>
               <ul>
                 <li class="footer-item_link"><a href="">About Us</a></li>
@@ -395,7 +417,7 @@
                 <li class="footer-item_link"><a href="">Blog</a></li>
               </ul>
             </div>
-            <div class="footer-item">
+            <div class="footer-item col-xl-2 col-sm-12">
               <p class="footer-item_title">Legal</p>
               <ul>
                 <li class="footer-item_link"><a href="">About  Us</a></li>
@@ -404,7 +426,7 @@
                 <li class="footer-item_link"><a href="">Blog</a></li>
               </ul>
             </div>
-            <div class="footer-item">
+            <div class="footer-item col-xl-2 col-sm-12">
               <p class="footer-item_title">Features</p>
               <ul>
                 <li class="footer-item_link"><a href="">Business  Marketing</a></li>
@@ -413,7 +435,7 @@
                 <li class="footer-item_link"><a href="">Unlimited Support</a></li>
               </ul>
             </div>
-            <div class="footer-item">
+            <div class="footer-item col-xl-2 col-sm-12">
               <p class="footer-item_title">Resources</p>
               <ul>
                 <li class="footer-item_link"><a href="">IOS & Android</a></li>
@@ -422,7 +444,7 @@
                 <li class="footer-item_link"><a href="">API</a></li>
               </ul>
             </div>
-            <div class="footer-item">
+            <div class="footer-item col-xl-3 col-sm-12">
               <p class="footer-item_title">Get In Touch</p>
               <ul>
                 
@@ -439,7 +461,24 @@
             </div>
           </div>
         </div>
+        <div class="coppy-right-wrapper">
+          <div class="container-fluid">
+            <p>Made With Love By Figmaland All Right Reserved </p>
+            <div class="coppy-right_image hide-all">
+            <a href=""><img src="./assets/image/fb.png" alt=""></a>
+            <a href=""><img src="./assets/image/ins.png" alt=""></a>
+            <a href=""><img src="./assets/image/twitter.png" alt=""></a>
+          </div>
+          <div class="coppy-right_image mobile">
+            <a href=""><img src="./assets/image/fb-lite.png" alt=""></a>
+            <a href=""><img src="./assets/image/ins-lite.png" alt=""></a>
+            <a href=""><img src="./assets/image/twitter-lite.png" alt=""></a>
+            <a href=""><img src="./assets/image/youtube-lite.png" alt=""></a>
+          </div>
+          </div>
+        </div>
       </footer>
+      
     </div>
   </div>
 </body>
