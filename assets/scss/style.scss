@@ -391,6 +391,78 @@ header {
     }
 }
 
+/*About block on mobile*/ 
+.about {
+    display: none;
+    padding: 100px 40px 200px;
+    background: white;
+    text-align: center;
+    h2{
+        @include title-text($text-color);
+    }
+    >p{
+        @include text-small($second-text-color);
+        width: 225px;
+        margin: 10px auto 100px;
+    }
+    .about-video{
+        position: relative;
+        margin-bottom: 72px;
+        >img{
+            width: 100%;
+        }
+        .sub-btn{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient( rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+        }
+    }
+    .about-content{
+        >p{
+            &:nth-child(1){
+                @include title-text($text-color);
+                margin: 0 auto
+            };
+            &:nth-child(2){
+                @include text-small($second-text-color);
+                margin: 10px auto 50px auto;
+            }
+        }
+        .about-team{
+            display: flex;
+            justify-content: center;
+            &:last-child{
+                margin-top: 30px;
+            }
+            img{
+                width: 10%;
+                height: 10%;
+                margin-right: 20px;
+            }
+            h5 {
+                @include text-medium($text-color);
+                text-align: left
+            }
+            h6{
+                @include text-small($second-text-color);
+                text-align: left;
+            }
+        }
+    }
+}
+
 /*Pricing block*/ 
 .price {
     background-color: #FAFAFA;
@@ -585,6 +657,8 @@ header {
     }
     
 }
+
+/*Footer*/ 
 footer{
     background-image: linear-gradient(to right,#004788,#D71489);
     .footer-wrapper {

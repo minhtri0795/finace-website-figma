@@ -1,4 +1,4 @@
-/*Tablet and mobile*/
+/*<==== Tablet and mobile ====>*/
 @media (max-width: 1024px) {
   .hide-all {
     display: none;
@@ -38,9 +38,12 @@
   #navbarNav .menu .nav-link.current {
     font-weight: normal;
   }
+  .about {
+    display: block;
+  }
 }
 
-/*Tablet*/
+/*<======Tablet======>*/
 @media (min-width: 740px) and (max-width: 1023px) {
   .tablet-hide {
     display: none;
@@ -113,6 +116,7 @@
   .value .value-card-item img {
     margin-right: 20px;
   }
+  /*Client block*/
   .client {
     padding-top: 0;
   }
@@ -140,8 +144,39 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
+  /*About block*/
+  .about {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 120px;
+  }
+  .about > p {
+    font-size: 18px;
+    line-height: 26px;
+    width: 524px;
+  }
+  .about .about-video > img {
+    height: 600px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about .about-content > p {
+    font-size: 18px;
+    line-height: 26px;
+    width: 524px;
+  }
+  .about .about-content .about-team {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 100px;
+  }
+  .about .about-content .about-team img {
+    margin-right: 40px;
+  }
+  /*Price block*/
   .price {
-    padding: 20px 20px 80px 20px;
+    padding: 100px 20px 80px 20px;
   }
   .price > p {
     width: 524px;
@@ -175,6 +210,7 @@
     font-size: 25px;
     line-height: 25px;
   }
+  /*Contact block*/
   .contact {
     height: 730px;
   }
@@ -197,6 +233,7 @@
     font-size: 18px;
     line-height: 26px;
   }
+  /*Footer*/
   footer .footer-wrapper {
     padding-left: 40px;
     padding-right: 40px;
@@ -210,14 +247,15 @@
   }
 }
 
-/*Mobile*/
+/*<==== Mobile ====>*/
 @media (max-width: 739px) {
   .mobile-hide {
     display: none;
   }
+  /*Header*/
   header {
     height: 2000px;
-    background-image: url("./assets/image/background.png");
+    background-image: url("../image/background.png");
     background-size: auto;
     background-repeat: no-repeat;
   }
@@ -299,6 +337,7 @@
   .value .value-card-item img {
     margin-right: 20px;
   }
+  /*Client block*/
   .client {
     padding-top: 0;
   }
@@ -336,8 +375,9 @@
   .client .client-testimo .client-card-item .card-body {
     background-color: white;
   }
+  /*Price block*/
   .price {
-    padding: 0 40px;
+    padding: 45px 40px 0;
   }
   .price > p {
     width: 264px;
@@ -363,6 +403,7 @@
   .subscribe-mobile {
     display: block;
   }
+  /*Footer*/
   footer {
     display: -webkit-box;
     display: -ms-flexbox;

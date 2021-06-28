@@ -43,7 +43,7 @@ header {
   width: 100%;
   height: 1000px;
   background-color: #FAFAFA;
-  background-image: url("./assets/image/hero-cover.3.jpg");
+  background-image: url("../image/hero-cover.3.jpg");
   background-size: 100% 800px;
   background-repeat: no-repeat;
   color: #ffff;
@@ -509,6 +509,130 @@ header .header-content .oval-btn:last-child:hover {
   color: #737373;
 }
 
+/*About block on mobile*/
+.about {
+  display: none;
+  padding: 100px 40px 200px;
+  background: white;
+  text-align: center;
+}
+
+.about h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+.about > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  width: 225px;
+  margin: 10px auto 100px;
+}
+
+.about .about-video {
+  position: relative;
+  margin-bottom: 72px;
+}
+
+.about .about-video > img {
+  width: 100%;
+}
+
+.about .about-video .sub-btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about .about-video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(14.58%, rgba(0, 0, 0, 0)), to(rgba(56, 56, 56, 0.84)));
+  background: linear-gradient(rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+}
+
+.about .about-content > p:nth-child(1) {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  margin: 0 auto;
+}
+
+.about .about-content > p:nth-child(2) {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin: 10px auto 50px auto;
+}
+
+.about .about-content .about-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .about-content .about-team:last-child {
+  margin-top: 30px;
+}
+
+.about .about-content .about-team img {
+  width: 10%;
+  height: 10%;
+  margin-right: 20px;
+}
+
+.about .about-content .about-team h5 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  text-align: left;
+}
+
+.about .about-content .about-team h6 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  text-align: left;
+}
+
 /*Pricing block*/
 .price {
   background-color: #FAFAFA;
@@ -848,6 +972,7 @@ header .header-content .oval-btn:last-child:hover {
   border: 1px solid white;
 }
 
+/*Footer*/
 footer {
   background-image: -webkit-gradient(linear, left top, right top, from(#004788), to(#D71489));
   background-image: linear-gradient(to right, #004788, #D71489);

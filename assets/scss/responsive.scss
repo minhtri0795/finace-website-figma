@@ -1,4 +1,4 @@
-/*Tablet and mobile*/
+/*<==== Tablet and mobile ====>*/
 @media (max-width: 1024px) {
   .hide-all {
     display: none;
@@ -41,9 +41,12 @@
       }
     }
   }
+  .about {
+    display: block;
+  }
 }
 
-/*Tablet*/
+/*<======Tablet======>*/
 @media (min-width: 740px) and (max-width: 1023px) {
   .tablet-hide {
     display: none;
@@ -109,6 +112,7 @@
       }
     }
   }
+  /*Client block*/ 
   .client {
     padding-top: 0;
     .client-testimo {
@@ -135,8 +139,42 @@
     }
     
   }
+
+  /*About block*/ 
+  .about{
+    padding-left: 20px;
+    padding-right: 20px;
+    >p{
+      font-size: 18px;
+      line-height: 26px;
+      width: 524px;
+    }
+    .about-video{
+      >img{
+        height: 600px;
+        object-fit: cover;
+      }
+    }
+    .about-content{
+      >p{
+        font-size: 18px;
+        line-height: 26px;
+        width: 524px;
+      }
+      .about-team{
+        justify-content: flex-start;
+        margin-left: 100px;
+        img{
+          margin-right: 40px;
+          
+        }
+      }
+    }
+  }
+
+  /*Price block*/ 
   .price {
-    padding: 20px 20px 80px 20px;
+    padding: 100px 20px 80px 20px;
     > p {
       width: 524px;
       font-size: 18px;
@@ -175,6 +213,8 @@
       }
     }
   }
+
+  /*Contact block*/ 
   .contact {
     height: 730px;
     .map-container {
@@ -198,6 +238,8 @@
       line-height: 26px;
     }
   }
+
+  /*Footer*/ 
   footer {
     .footer-wrapper {
       padding-left: 40px;
@@ -213,11 +255,12 @@
   }
 }
 
-/*Mobile*/
+/*<==== Mobile ====>*/
 @media (max-width: 739px) {
   .mobile-hide {
     display: none;
   }
+  /*Header*/ 
   header {
     height: 2000px;
     background-image: url("./assets/image/background.png");
@@ -292,6 +335,8 @@
       }
     }
   }
+
+  /*Client block*/ 
   .client {
     padding-top: 0;
     .client-stats {
@@ -327,8 +372,10 @@
       }
     }
   }
+
+  /*Price block*/ 
   .price {
-    padding: 0 40px;
+    padding: 45px 40px 0;
     > p {
       width: 264px;
       margin-bottom: 60px;
@@ -354,6 +401,8 @@
   .subscribe-mobile {
     display: block;
   }
+
+  /*Footer*/ 
   footer {
     display: flex;
     flex-direction: column;
